@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3923616252707706566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6386441866610199856}
+  - component: {fileID: 6396419112142649650}
+  - component: {fileID: 2639247791516923403}
+  - component: {fileID: 8253598689231051405}
+  - component: {fileID: 7050157364929686298}
+  m_Layer: 0
+  m_Name: Cannonfanal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6386441866610199856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3923616252707706566}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.718072, z: -0.0000000144355, w: 0.6959689}
+  m_LocalPosition: {x: -8.49, y: 0.24, z: -13.75}
+  m_LocalScale: {x: 1.6605893, y: 1.7112161, z: 0.3442469}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 91.791, z: 0}
+--- !u!33 &6396419112142649650
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3923616252707706566}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &2639247791516923403
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3923616252707706566}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cc2e97c562496fd47944459cb08408c6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8253598689231051405
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3923616252707706566}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7050157364929686298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3923616252707706566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97808d0f9d9af33468293f12ec24b2fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab:
+  - {fileID: 4702785131777302315, guid: 9431ed6f4006f994ca07dcf745eac898, type: 3}
+  - {fileID: 48159621698919741, guid: d577d37bd8c27b946af3595a2a3093c1, type: 3}
+  - {fileID: 2203850860590488823, guid: e59e4c496fca21242a326d2c5b7f2083, type: 3}
+  - {fileID: 7126009584675092587, guid: 7caa08932aa5ffe439f5ed9f718f69d3, type: 3}
+  - {fileID: 5766630105510806045, guid: 6236c0a8da388ec4fa7a15c6cc1e7f3b, type: 3}
+  - {fileID: 1731754650165841034, guid: c27df7603021df64eb9fe9ff9568265e, type: 3}
+  - {fileID: 5270282071212980954, guid: 0b7c81308121de344bd9a0acc455e1dd, type: 3}
+  - {fileID: 3443463397154907061, guid: 3b8411b8808fbd942874d5e8cb42c5c0, type: 3}
+  - {fileID: 156556953097000827, guid: 32797c04271b8f84b8f1d36eb14f4ac8, type: 3}
+  - {fileID: 993957045398845256, guid: b5c838718e043f045affa15d2c59f436, type: 3}
+  - {fileID: 8764377528321541992, guid: 7ddddcbf0e035f843b6c53fb0c304afa, type: 3}
+  spawnRates:
+  - 40
+  - 40
+  - 30
+  - 30
+  - 20
+  - 15
+  - 10
+  - 10
+  - 3
+  - 3
+  - 3
+  spawnPoint: {fileID: 6386441866610199856}
+  shootForce: 1000
+  shootInterval: 0.5
+  Destroy_wait: 10
