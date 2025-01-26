@@ -31,14 +31,14 @@ public class BulletController : MonoBehaviour
         
         if (!hit && Vector3.Distance(transform.position, target) < .01f)
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 3f);
         }
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        ContactPoint contact = other.GetContact(0);
-        //GameObject.Instantiate(bulletDecal, contact.point + contact.normal * .0001f, Quaternion.LookRotation(contact.normal));
-        Destroy(gameObject);
-    }
+    //private void OnCollisionEnter(Collision other)
+    //{
+    //    ContactPoint contact = other.GetContact(0);
+    //    //GameObject.Instantiate(bulletDecal, contact.point + contact.normal * .0001f, Quaternion.LookRotation(contact.normal));
+    //    Destroy(gameObject);
+    //}
 }
