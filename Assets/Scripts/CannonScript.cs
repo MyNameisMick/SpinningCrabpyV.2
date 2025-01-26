@@ -5,8 +5,11 @@ public class CannonScript : MonoBehaviour
     public Rigidbody[] projectilePrefab; // Prefab กระสุน
     public float[] spawnRates;           // อัตราการเกิดกระสุนแต่ละประเภท (รวมกันต้องได้ 1 หรือ 100%)
     public Transform spawnPoint;         // จุดที่ยิงกระสุน
-    public float shootForce = 1000f;     // แรงยิงกระสุน
-    public float shootInterval = 3f;     // ระยะเวลาระหว่างการยิง (3 วินาที)
+    public float shootForce = 1000f;
+    // แรงยิงกระสุน
+    public float MinshootInterval = 5f;
+    public float MaxshootInterval = 20f; 
+    // ระยะเวลาระหว่างการยิง (3 วินาที)
     public float Destroy_wait = 10f;     // ระยะเวลาก่อนที่กระสุนจะถูกทำลาย
 
     void Start()
@@ -19,7 +22,7 @@ public class CannonScript : MonoBehaviour
         }
 
         // ยิงกระสุนทุกๆ shootInterval วินาที
-        InvokeRepeating("Shoot", 0f, shootInterval);
+        InvokeRepeating("Shoot", 0f, Random.Range(MinshootInterval,MaxshootInterval));
     }
 
     void Shoot()
