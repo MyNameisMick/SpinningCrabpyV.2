@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fanal_Scene/PlayingGame.unity
     guid: 1b59c404767917c4a80441649169a2e9
+  - enabled: 1
+    path: Assets/Scenes/OutsideBFgetWash.unity
+    guid: e7638939d34a40542ab784ca0f09b703
+  - enabled: 1
+    path: Assets/Scenes/InsideWashMat_sence.unity
+    guid: d67304d6d78ea3648a263b509578ccba
+  - enabled: 1
+    path: Assets/Scenes/OutsideWashMat_sence.unity
+    guid: 7895189594fa84040b8a1fefc7a8dd45
+  - enabled: 1
+    path: Assets/Scenes/Sandsence.unity
+    guid: d18607278354b0e4ea245da9d9be4c9c
   m_configObjects: {}
