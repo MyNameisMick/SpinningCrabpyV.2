@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5270282071212980954}
   - component: {fileID: 6567617170228757828}
   - component: {fileID: 5991396504928125812}
+  - component: {fileID: 5049566323121926207}
   m_Layer: 0
   m_Name: Enemy7
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,3 +154,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.6861491, y: 3.651558, z: 0.115393326}
   m_Center: {x: -0.0830279, y: 0.029286873, z: 0.00073812885}
+--- !u!114 &5049566323121926207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248426675388992728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ed30ca4d16c8814fa3c1a59687d7e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

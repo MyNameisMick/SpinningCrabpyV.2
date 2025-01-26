@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 1731754650165841034}
   - component: {fileID: 949062753928077081}
   - component: {fileID: 491354278804903952}
+  - component: {fileID: 5099512445646168345}
   m_Layer: 0
   m_Name: Enemy6
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,3 +154,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.0999742, y: 3.6408947, z: 0.08270176}
   m_Center: {x: -0.056935363, y: 0.0058786883, z: 0.0048829904}
+--- !u!114 &5099512445646168345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291422480471661391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ed30ca4d16c8814fa3c1a59687d7e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

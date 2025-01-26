@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 7126009584675092587}
   - component: {fileID: 3584088845426168152}
   - component: {fileID: 895557546444839953}
+  - component: {fileID: 5204689995524472064}
   m_Layer: 0
   m_Name: Enemy4
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,3 +154,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.305003, y: 3.1263382, z: 0.059105795}
   m_Center: {x: 0.2754359, y: -0.068764694, z: 0.0051531075}
+--- !u!114 &5204689995524472064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548465269652463768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ed30ca4d16c8814fa3c1a59687d7e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

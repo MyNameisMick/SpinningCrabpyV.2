@@ -680,7 +680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1977708604}
-  - component: {fileID: 1977708603}
+  - component: {fileID: 1977708605}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -688,29 +688,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!320 &1977708603
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977708602}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 3c92a80054a625c46b2c5601aaf1e36d, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -3237953202737165485, guid: 3c92a80054a625c46b2c5601aaf1e36d, type: 2}
-    value: {fileID: 501707112}
-  - key: {fileID: -5143546749291205630, guid: 3c92a80054a625c46b2c5601aaf1e36d, type: 2}
-    value: {fileID: 1749415960}
-  - key: {fileID: 8636249355756565816, guid: 3c92a80054a625c46b2c5601aaf1e36d, type: 2}
-    value: {fileID: 184192336}
-  m_ExposedReferences:
-    m_References: []
 --- !u!4 &1977708604
 Transform:
   m_ObjectHideFlags: 0
@@ -729,6 +706,29 @@ Transform:
   - {fileID: 184192338}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &1977708605
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977708602}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: cf1191e4012e1604eadb855ab86a469b, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -3565955049945697486, guid: cf1191e4012e1604eadb855ab86a469b, type: 2}
+    value: {fileID: 1749415960}
+  - key: {fileID: -1717961800165295737, guid: cf1191e4012e1604eadb855ab86a469b, type: 2}
+    value: {fileID: 501707112}
+  - key: {fileID: 8788635150772132781, guid: cf1191e4012e1604eadb855ab86a469b, type: 2}
+    value: {fileID: 184192336}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
