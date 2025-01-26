@@ -44,6 +44,8 @@ public class PlayerController : MonoBehaviour
     Vector2 currentAnimationBlendVector;
     Vector2 animationVelocity;
 
+    public NewShakeScript shake;
+
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
@@ -53,7 +55,7 @@ public class PlayerController : MonoBehaviour
         lookAction = playerInput.actions["Look"];
         jumpAction = playerInput.actions["Jump"];
         shootAction = playerInput.actions["shoot"];
-
+            
         Cursor.lockState = CursorLockMode.Locked;
 
         animator = GetComponent<Animator>();
@@ -77,6 +79,7 @@ public class PlayerController : MonoBehaviour
         RaycastHit hit;
         GameObject bullet = GameObject.Instantiate(bulletPrefab, berralTranform.position, Quaternion.identity, bulletParant);
         BulletController bulletController = bullet.GetComponent<BulletController>();
+        shake.ShakeScreen( 2f, 1f, 0.2f);
 
         if (Physics.Raycast(cameraTranform.position, cameraTranform.forward, out hit, Mathf.Infinity))
         {

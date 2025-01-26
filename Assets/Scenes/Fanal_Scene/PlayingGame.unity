@@ -3803,8 +3803,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Laundry finished in : 00'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fe6e9123905345141aba50d79c1b4d6b, type: 2}
-  m_sharedMaterial: {fileID: 5089107378785789049, guid: fe6e9123905345141aba50d79c1b4d6b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3828,7 +3828,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.45
+  m_fontSize: 32.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5902,7 +5902,7 @@ MonoBehaviour:
   groundYOffset: 0.6
   groundMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   gravity: -9.81
 --- !u!65 &1994311922
 BoxCollider:
