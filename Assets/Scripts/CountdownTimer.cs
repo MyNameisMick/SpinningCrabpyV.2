@@ -23,7 +23,7 @@ public class CountdownTimer : MonoBehaviour
         if (timeLeft > 0)
         {
             timeLeft -= Time.deltaTime; // ลดเวลาตามเวลาจริง
-            countdownText.text = "Laundry finished in : " + Mathf.Ceil(timeLeft).ToString(); // แสดงเวลาที่เหลือแบบปัดขึ้น
+            countdownText.text = ": " + Mathf.Ceil(timeLeft).ToString(); // แสดงเวลาที่เหลือแบบปัดขึ้น
         }
         else
         {

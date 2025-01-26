@@ -166,3 +166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed30ca4d16c8814fa3c1a59687d7e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particle: {fileID: 2756838522203499002, guid: 974293911d0222846ad5d5285ca89641, type: 3}
+  shake: {fileID: 7822560290868662912, guid: e3d30537e91e09542ba97f6ad84a7ba8, type: 3}
+  sound: {fileID: 8603025485458058897, guid: 9575023916ab0db458fd2c5a19169e12, type: 3}

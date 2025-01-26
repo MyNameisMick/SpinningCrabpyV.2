@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -45,6 +46,8 @@ public class PlayerController : MonoBehaviour
     Vector2 animationVelocity;
 
     public NewShakeScript shake;
+    bool canShoot = true;
+    public AudioSource bubbleSound;
 
     private void Awake()
     {
@@ -76,21 +79,34 @@ public class PlayerController : MonoBehaviour
 
     void ShootGun()
     {
-        RaycastHit hit;
-        GameObject bullet = GameObject.Instantiate(bulletPrefab, berralTranform.position, Quaternion.identity, bulletParant);
-        BulletController bulletController = bullet.GetComponent<BulletController>();
-        shake.ShakeScreen( 2f, 1f, 0.2f);
+        if (canShoot)
+        {
+            bubbleSound.Play();
+            RaycastHit hit;
+            GameObject bullet = GameObject.Instantiate(bulletPrefab, berralTranform.position, Quaternion.identity, bulletParant);
+            BulletController bulletController = bullet.GetComponent<BulletController>();
+            shake.ShakeScreen(2f, 1f, 0.2f);
 
-        if (Physics.Raycast(cameraTranform.position, cameraTranform.forward, out hit, Mathf.Infinity))
-        {
-            bulletController.target = hit.point;
-            bulletController.hit = true;
+            if (Physics.Raycast(cameraTranform.position, cameraTranform.forward, out hit, Mathf.Infinity))
+            {
+                bulletController.target = hit.point;
+                bulletController.hit = true;
+            }
+            else
+            {
+                bulletController.target = cameraTranform.position + cameraTranform.forward * bulletHitMissDistance;
+                bulletController.hit = false;
+            }
+            StartCoroutine(BulletDelay());
         }
-        else
-        {
-            bulletController.target = cameraTranform.position + cameraTranform.forward * bulletHitMissDistance;
-            bulletController.hit = false;
-        }
+        
+    }
+
+    IEnumerator BulletDelay()
+    {
+        canShoot = false;
+        yield return new WaitForSeconds(1f);
+        canShoot = true;
     }
 
     void Update()

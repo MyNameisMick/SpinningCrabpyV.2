@@ -9,8 +9,15 @@ public class HeartSystem : MonoBehaviour
     public Sprite heartContainer;
     public Image[] heartImage;
 
+    public SceneChanger SceneChanger;
+
     void Update()
     {
+        if (heartCount == 0)
+        {
+            SceneChanger.ChangeScene();
+        }
+
         if (heartCount < 1)
         {
             heartImage[0].sprite = heartContainer;
